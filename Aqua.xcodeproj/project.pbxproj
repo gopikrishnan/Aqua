@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB4F2172639D23300EAA59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2162639D23300EAA59A /* AppDelegate.swift */; };
+		FFB4F2192639D23300EAA59A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2182639D23300EAA59A /* ContentView.swift */; };
+		FFB4F21B2639D23600EAA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21A2639D23600EAA59A /* Assets.xcassets */; };
+		FFB4F21E2639D23600EAA59A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21D2639D23600EAA59A /* Preview Assets.xcassets */; };
+		FFB4F2212639D23600EAA59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21F2639D23600EAA59A /* Main.storyboard */; };
+		FFB4F22D2639D23600EAA59A /* AquaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F22C2639D23600EAA59A /* AquaTests.swift */; };
+		FFB4F2382639D23600EAA59A /* AquaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2372639D23600EAA59A /* AquaUITests.swift */; };
+		FFB4F2542639E18000EAA59A /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2532639E18000EAA59A /* MenuController.swift */; };
+		FFB4F2552639E18000EAA59A /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2532639E18000EAA59A /* MenuController.swift */; };
+		FFB4F2562639E18000EAA59A /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2532639E18000EAA59A /* MenuController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFB4F2292639D23600EAA59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB4F20B2639D23300EAA59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB4F2122639D23300EAA59A;
+			remoteInfo = Aqua;
+		};
+		FFB4F2342639D23600EAA59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB4F20B2639D23300EAA59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB4F2122639D23300EAA59A;
+			remoteInfo = Aqua;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFB4F2132639D23300EAA59A /* Aqua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aqua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB4F2162639D23300EAA59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFB4F2182639D23300EAA59A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFB4F21A2639D23600EAA59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB4F21D2639D23600EAA59A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFB4F2202639D23600EAA59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFB4F2222639D23600EAA59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB4F2232639D23600EAA59A /* Aqua.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aqua.entitlements; sourceTree = "<group>"; };
+		FFB4F2282639D23600EAA59A /* AquaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB4F22C2639D23600EAA59A /* AquaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaTests.swift; sourceTree = "<group>"; };
+		FFB4F22E2639D23600EAA59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB4F2332639D23600EAA59A /* AquaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB4F2372639D23600EAA59A /* AquaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaUITests.swift; sourceTree = "<group>"; };
+		FFB4F2392639D23600EAA59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB4F2532639E18000EAA59A /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB4F2102639D23300EAA59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F2252639D23600EAA59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F2302639D23600EAA59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFB4F20A2639D23300EAA59A = {
+			isa = PBXGroup;
+			children = (
+				FFB4F2152639D23300EAA59A /* Aqua */,
+				FFB4F22B2639D23600EAA59A /* AquaTests */,
+				FFB4F2362639D23600EAA59A /* AquaUITests */,
+				FFB4F2142639D23300EAA59A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB4F2142639D23300EAA59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F2132639D23300EAA59A /* Aqua.app */,
+				FFB4F2282639D23600EAA59A /* AquaTests.xctest */,
+				FFB4F2332639D23600EAA59A /* AquaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB4F2152639D23300EAA59A /* Aqua */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F2162639D23300EAA59A /* AppDelegate.swift */,
+				FFB4F2182639D23300EAA59A /* ContentView.swift */,
+				FFB4F21A2639D23600EAA59A /* Assets.xcassets */,
+				FFB4F21F2639D23600EAA59A /* Main.storyboard */,
+				FFB4F2222639D23600EAA59A /* Info.plist */,
+				FFB4F2232639D23600EAA59A /* Aqua.entitlements */,
+				FFB4F21C2639D23600EAA59A /* Preview Content */,
+				FFB4F2532639E18000EAA59A /* MenuController.swift */,
+			);
+			path = Aqua;
+			sourceTree = "<group>";
+		};
+		FFB4F21C2639D23600EAA59A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F21D2639D23600EAA59A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFB4F22B2639D23600EAA59A /* AquaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F22C2639D23600EAA59A /* AquaTests.swift */,
+				FFB4F22E2639D23600EAA59A /* Info.plist */,
+			);
+			path = AquaTests;
+			sourceTree = "<group>";
+		};
+		FFB4F2362639D23600EAA59A /* AquaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F2372639D23600EAA59A /* AquaUITests.swift */,
+				FFB4F2392639D23600EAA59A /* Info.plist */,
+			);
+			path = AquaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB4F2122639D23300EAA59A /* Aqua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB4F23C2639D23600EAA59A /* Build configuration list for PBXNativeTarget "Aqua" */;
+			buildPhases = (
+				FFB4F20F2639D23300EAA59A /* Sources */,
+				FFB4F2102639D23300EAA59A /* Frameworks */,
+				FFB4F2112639D23300EAA59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aqua;
+			productName = Aqua;
+			productReference = FFB4F2132639D23300EAA59A /* Aqua.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFB4F2272639D23600EAA59A /* AquaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB4F23F2639D23600EAA59A /* Build configuration list for PBXNativeTarget "AquaTests" */;
+			buildPhases = (
+				FFB4F2242639D23600EAA59A /* Sources */,
+				FFB4F2252639D23600EAA59A /* Frameworks */,
+				FFB4F2262639D23600EAA59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB4F22A2639D23600EAA59A /* PBXTargetDependency */,
+			);
+			name = AquaTests;
+			productName = AquaTests;
+			productReference = FFB4F2282639D23600EAA59A /* AquaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFB4F2322639D23600EAA59A /* AquaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB4F2422639D23600EAA59A /* Build configuration list for PBXNativeTarget "AquaUITests" */;
+			buildPhases = (
+				FFB4F22F2639D23600EAA59A /* Sources */,
+				FFB4F2302639D23600EAA59A /* Frameworks */,
+				FFB4F2312639D23600EAA59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB4F2352639D23600EAA59A /* PBXTargetDependency */,
+			);
+			name = AquaUITests;
+			productName = AquaUITests;
+			productReference = FFB4F2332639D23600EAA59A /* AquaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB4F20B2639D23300EAA59A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FFB4F2122639D23300EAA59A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FFB4F2272639D23600EAA59A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FFB4F2122639D23300EAA59A;
+					};
+					FFB4F2322639D23600EAA59A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FFB4F2122639D23300EAA59A;
+					};
+				};
+			};
+			buildConfigurationList = FFB4F20E2639D23300EAA59A /* Build configuration list for PBXProject "Aqua" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB4F20A2639D23300EAA59A;
+			productRefGroup = FFB4F2142639D23300EAA59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB4F2122639D23300EAA59A /* Aqua */,
+				FFB4F2272639D23600EAA59A /* AquaTests */,
+				FFB4F2322639D23600EAA59A /* AquaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB4F2112639D23300EAA59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB4F2212639D23600EAA59A /* Main.storyboard in Resources */,
+				FFB4F21E2639D23600EAA59A /* Preview Assets.xcassets in Resources */,
+				FFB4F21B2639D23600EAA59A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F2262639D23600EAA59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F2312639D23600EAA59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB4F20F2639D23300EAA59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB4F2192639D23300EAA59A /* ContentView.swift in Sources */,
+				FFB4F2542639E18000EAA59A /* MenuController.swift in Sources */,
+				FFB4F2172639D23300EAA59A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F2242639D23600EAA59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB4F2552639E18000EAA59A /* MenuController.swift in Sources */,
+				FFB4F22D2639D23600EAA59A /* AquaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F22F2639D23600EAA59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB4F2562639E18000EAA59A /* MenuController.swift in Sources */,
+				FFB4F2382639D23600EAA59A /* AquaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFB4F22A2639D23600EAA59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB4F2122639D23300EAA59A /* Aqua */;
+			targetProxy = FFB4F2292639D23600EAA59A /* PBXContainerItemProxy */;
+		};
+		FFB4F2352639D23600EAA59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB4F2122639D23300EAA59A /* Aqua */;
+			targetProxy = FFB4F2342639D23600EAA59A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFB4F21F2639D23600EAA59A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB4F2202639D23600EAA59A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB4F23A2639D23600EAA59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFB4F23B2639D23600EAA59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FFB4F23D2639D23600EAA59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Aqua/Aqua.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Aqua/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Aqua/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.Aqua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FFB4F23E2639D23600EAA59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Aqua/Aqua.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Aqua/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Aqua/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.Aqua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FFB4F2402639D23600EAA59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AquaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.AquaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aqua.app/Contents/MacOS/Aqua";
+			};
+			name = Debug;
+		};
+		FFB4F2412639D23600EAA59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AquaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.AquaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aqua.app/Contents/MacOS/Aqua";
+			};
+			name = Release;
+		};
+		FFB4F2432639D23600EAA59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AquaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.AquaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Aqua;
+			};
+			name = Debug;
+		};
+		FFB4F2442639D23600EAA59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AquaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.AquaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Aqua;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB4F20E2639D23300EAA59A /* Build configuration list for PBXProject "Aqua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4F23A2639D23600EAA59A /* Debug */,
+				FFB4F23B2639D23600EAA59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB4F23C2639D23600EAA59A /* Build configuration list for PBXNativeTarget "Aqua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4F23D2639D23600EAA59A /* Debug */,
+				FFB4F23E2639D23600EAA59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB4F23F2639D23600EAA59A /* Build configuration list for PBXNativeTarget "AquaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4F2402639D23600EAA59A /* Debug */,
+				FFB4F2412639D23600EAA59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB4F2422639D23600EAA59A /* Build configuration list for PBXNativeTarget "AquaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4F2432639D23600EAA59A /* Debug */,
+				FFB4F2442639D23600EAA59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB4F20B2639D23300EAA59A /* Project object */;
+}
