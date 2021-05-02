@@ -13,11 +13,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
     var menuBar: MenuController?
+    var popover = NSPopover.init()
+
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
 
+        
+        popover.contentSize = NSSize(width: 360, height: 360)
+        popover.contentViewController = NSHostingController(rootView: contentView)
+               
+        
         // Create the window and set the content view.
 //        window = NSWindow(
 //            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
@@ -30,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //        window.makeKeyAndOrderFront(nil)
         
         //initialising our custom view.
-        menuBar = MenuController.init()
+        menuBar = MenuController.init(popover)
         
     }
 
