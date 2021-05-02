@@ -21,9 +21,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let contentView = ContentView()
 
         
+        popover.contentViewController = MainViewController()
         popover.contentSize = NSSize(width: 360, height: 360)
-        popover.contentViewController = NSHostingController(rootView: contentView)
-               
+        popover.contentViewController?.view = NSHostingView(rootView: contentView)
         
         // Create the window and set the content view.
 //        window = NSWindow(

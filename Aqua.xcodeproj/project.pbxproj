@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF043CD0263F4355001C030D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF043CCF263F4355001C030D /* MainViewController.swift */; };
+		FF043CD1263F4355001C030D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF043CCF263F4355001C030D /* MainViewController.swift */; };
+		FF043CD2263F4355001C030D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF043CCF263F4355001C030D /* MainViewController.swift */; };
 		FFB4F2172639D23300EAA59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2162639D23300EAA59A /* AppDelegate.swift */; };
 		FFB4F2192639D23300EAA59A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2182639D23300EAA59A /* ContentView.swift */; };
 		FFB4F21B2639D23600EAA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21A2639D23600EAA59A /* Assets.xcassets */; };
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF043CCF263F4355001C030D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FFB4F2132639D23300EAA59A /* Aqua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aqua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB4F2162639D23300EAA59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFB4F2182639D23300EAA59A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB4F2162639D23300EAA59A /* AppDelegate.swift */,
+				FF043CCF263F4355001C030D /* MainViewController.swift */,
 				FFCCF2F8263B13C40006369A /* Listener.swift */,
 				FFB4F2182639D23300EAA59A /* ContentView.swift */,
 				FFB4F21A2639D23600EAA59A /* Assets.xcassets */,
@@ -279,6 +284,7 @@
 				FFB4F2542639E18000EAA59A /* MenuController.swift in Sources */,
 				FFB4F2172639D23300EAA59A /* AppDelegate.swift in Sources */,
 				FFCCF2F9263B13C40006369A /* Listener.swift in Sources */,
+				FF043CD0263F4355001C030D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				FFB4F2552639E18000EAA59A /* MenuController.swift in Sources */,
 				FFCCF2FA263B13C40006369A /* Listener.swift in Sources */,
 				FFB4F22D2639D23600EAA59A /* AquaTests.swift in Sources */,
+				FF043CD1263F4355001C030D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +306,7 @@
 				FFB4F2562639E18000EAA59A /* MenuController.swift in Sources */,
 				FFCCF2FB263B13C50006369A /* Listener.swift in Sources */,
 				FFB4F2382639D23600EAA59A /* AquaUITests.swift in Sources */,
+				FF043CD2263F4355001C030D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
