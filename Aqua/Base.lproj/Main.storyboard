@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -686,13 +685,89 @@
             <objects>
                 <viewController title="MainViewController" storyboardIdentifier="MainViewController" id="0zO-fQ-bMT" customClass="MainViewController" customModule="Aqua" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="L12-hO-3yd">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="298" height="292"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5i8-Lh-MnC">
+                                <rect key="frame" x="92" y="219" width="32" height="32"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="ColoredGlassIcon" id="cTs-Nu-VLX"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" mirrorLayoutDirectionWhenInternationalizing="never" preferredMaxLayoutWidth="450" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buE-4t-IM9">
+                                <rect key="frame" x="126" y="209" width="70" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="KPG-QU-DhK"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" allowsUndo="NO" alignment="center" title="Aqua" id="cJi-TF-1zs">
+                                    <font key="font" size="30" name="Gobold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dbo-JB-7cU">
+                                <rect key="frame" x="108" y="127" width="138" height="28"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="5" doubleValue="2.5" tickMarkPosition="above" numberOfTickMarks="5" allowsTickMarkValuesOnly="YES" sliderType="linear" id="PHx-v1-lfO"/>
+                            </slider>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-YS-GNd">
+                                <rect key="frame" x="20" y="135" width="78" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="ovW-IA-XWv"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Interval" id="kGe-dQ-VCh">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cx4-4b-Fml">
+                                <rect key="frame" x="220" y="116" width="39" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="vrq-2b-s5d"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="2 hours" id="Dor-Yq-YDQ">
+                                    <font key="font" size="10" name="AvenirNext-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hZH-wy-EHf">
+                                <rect key="frame" x="94" y="116" width="40" height="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="1 hour" id="dod-UA-OFc">
+                                    <font key="font" size="10" name="AvenirNext-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="cx4-4b-Fml" firstAttribute="leading" secondItem="L12-hO-3yd" secondAttribute="trailing" constant="-76" id="3r3-lT-SG9"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cx4-4b-Fml" secondAttribute="trailing" constant="40" id="6Ee-q5-N3l"/>
+                            <constraint firstItem="cx4-4b-Fml" firstAttribute="leading" secondItem="hZH-wy-EHf" secondAttribute="trailing" constant="90" id="6Sw-FN-buD"/>
+                            <constraint firstItem="dbo-JB-7cU" firstAttribute="leading" secondItem="H4b-YS-GNd" secondAttribute="trailing" constant="14" id="G5S-hI-sHF"/>
+                            <constraint firstItem="H4b-YS-GNd" firstAttribute="centerY" secondItem="dbo-JB-7cU" secondAttribute="centerY" id="H7b-2P-Lcf"/>
+                            <constraint firstItem="hZH-wy-EHf" firstAttribute="top" secondItem="dbo-JB-7cU" secondAttribute="bottom" constant="3" id="IJV-or-kwN"/>
+                            <constraint firstItem="5i8-Lh-MnC" firstAttribute="centerY" secondItem="buE-4t-IM9" secondAttribute="centerY" constant="-2" id="OkJ-J7-0Qp"/>
+                            <constraint firstItem="buE-4t-IM9" firstAttribute="centerX" secondItem="L12-hO-3yd" secondAttribute="centerX" constant="12" id="QhY-xj-XWG"/>
+                            <constraint firstItem="hZH-wy-EHf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="L12-hO-3yd" secondAttribute="leading" constant="96" id="Rb9-se-RRf"/>
+                            <constraint firstItem="buE-4t-IM9" firstAttribute="top" secondItem="L12-hO-3yd" secondAttribute="top" constant="35" id="TSJ-fb-QCg"/>
+                            <constraint firstItem="5i8-Lh-MnC" firstAttribute="centerX" secondItem="L12-hO-3yd" secondAttribute="centerX" constant="-41" id="WoP-S2-koR"/>
+                            <constraint firstItem="H4b-YS-GNd" firstAttribute="leading" secondItem="L12-hO-3yd" secondAttribute="leading" constant="22" id="abv-Yd-Q0v"/>
+                            <constraint firstItem="buE-4t-IM9" firstAttribute="leading" secondItem="5i8-Lh-MnC" secondAttribute="trailing" constant="4" id="e6O-C9-aJ0"/>
+                            <constraint firstItem="dbo-JB-7cU" firstAttribute="top" secondItem="buE-4t-IM9" secondAttribute="bottom" constant="56" id="jsQ-Rd-caY"/>
+                            <constraint firstItem="cx4-4b-Fml" firstAttribute="centerY" secondItem="hZH-wy-EHf" secondAttribute="centerY" id="k0U-Z9-iRC"/>
+                            <constraint firstAttribute="trailing" secondItem="dbo-JB-7cU" secondAttribute="trailing" constant="54" id="uRD-Rv-yKB"/>
+                            <constraint firstAttribute="bottom" secondItem="hZH-wy-EHf" secondAttribute="bottom" constant="116" id="xNy-fm-LdP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="dbo-JB-7cU" id="7qg-lw-fec"/>
+                    </connections>
                 </viewController>
                 <customObject id="gnf-xd-hR6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="226"/>
+            <point key="canvasLocation" x="149" y="226"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ColoredGlassIcon" width="32" height="32"/>
+    </resources>
 </document>

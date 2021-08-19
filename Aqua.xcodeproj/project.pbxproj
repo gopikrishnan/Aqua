@@ -10,8 +10,15 @@
 		FF043CD0263F4355001C030D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF043CCF263F4355001C030D /* MainViewController.swift */; };
 		FF043CD1263F4355001C030D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF043CCF263F4355001C030D /* MainViewController.swift */; };
 		FF043CD2263F4355001C030D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF043CCF263F4355001C030D /* MainViewController.swift */; };
+		FF0CCCE026CD7B5900032DE1 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CCCDF26CD7B5900032DE1 /* Reminder.swift */; };
+		FF0CCCE126CD7B5900032DE1 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CCCDF26CD7B5900032DE1 /* Reminder.swift */; };
+		FF0CCCE226CD7B5900032DE1 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CCCDF26CD7B5900032DE1 /* Reminder.swift */; };
+		FF308CA026CE61380061A38E /* Gobold Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF308C9F26CE61380061A38E /* Gobold Regular.otf */; };
+		FF308CA126CE61380061A38E /* Gobold Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF308C9F26CE61380061A38E /* Gobold Regular.otf */; };
+		FF308CA226CE61380061A38E /* Gobold Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF308C9F26CE61380061A38E /* Gobold Regular.otf */; };
+		FF8BDF1E269F38160056B965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21F2639D23600EAA59A /* Main.storyboard */; };
+		FF8BDF22269F38170056B965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21F2639D23600EAA59A /* Main.storyboard */; };
 		FFB4F2172639D23300EAA59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2162639D23300EAA59A /* AppDelegate.swift */; };
-		FFB4F2192639D23300EAA59A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F2182639D23300EAA59A /* ContentView.swift */; };
 		FFB4F21B2639D23600EAA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21A2639D23600EAA59A /* Assets.xcassets */; };
 		FFB4F21E2639D23600EAA59A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21D2639D23600EAA59A /* Preview Assets.xcassets */; };
 		FFB4F2212639D23600EAA59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F21F2639D23600EAA59A /* Main.storyboard */; };
@@ -44,9 +51,10 @@
 
 /* Begin PBXFileReference section */
 		FF043CCF263F4355001C030D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FF0CCCDF26CD7B5900032DE1 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		FF308C9F26CE61380061A38E /* Gobold Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gobold Regular.otf"; sourceTree = "<group>"; };
 		FFB4F2132639D23300EAA59A /* Aqua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aqua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB4F2162639D23300EAA59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFB4F2182639D23300EAA59A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFB4F21A2639D23600EAA59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFB4F21D2639D23600EAA59A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFB4F2202639D23600EAA59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 		FFB4F20A2639D23300EAA59A = {
 			isa = PBXGroup;
 			children = (
+				FF308C9F26CE61380061A38E /* Gobold Regular.otf */,
 				FFB4F2152639D23300EAA59A /* Aqua */,
 				FFB4F22B2639D23600EAA59A /* AquaTests */,
 				FFB4F2362639D23600EAA59A /* AquaUITests */,
@@ -112,14 +121,14 @@
 			children = (
 				FFB4F2162639D23300EAA59A /* AppDelegate.swift */,
 				FF043CCF263F4355001C030D /* MainViewController.swift */,
+				FFB4F2532639E18000EAA59A /* MenuController.swift */,
+				FF0CCCDF26CD7B5900032DE1 /* Reminder.swift */,
 				FFCCF2F8263B13C40006369A /* Listener.swift */,
-				FFB4F2182639D23300EAA59A /* ContentView.swift */,
 				FFB4F21A2639D23600EAA59A /* Assets.xcassets */,
 				FFB4F21F2639D23600EAA59A /* Main.storyboard */,
 				FFB4F2222639D23600EAA59A /* Info.plist */,
 				FFB4F2232639D23600EAA59A /* Aqua.entitlements */,
 				FFB4F21C2639D23600EAA59A /* Preview Content */,
-				FFB4F2532639E18000EAA59A /* MenuController.swift */,
 			);
 			path = Aqua;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 			files = (
 				FFB4F2212639D23600EAA59A /* Main.storyboard in Resources */,
 				FFB4F21E2639D23600EAA59A /* Preview Assets.xcassets in Resources */,
+				FF308CA026CE61380061A38E /* Gobold Regular.otf in Resources */,
 				FFB4F21B2639D23600EAA59A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF308CA126CE61380061A38E /* Gobold Regular.otf in Resources */,
+				FF8BDF1E269F38160056B965 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +282,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF308CA226CE61380061A38E /* Gobold Regular.otf in Resources */,
+				FF8BDF22269F38170056B965 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB4F2192639D23300EAA59A /* ContentView.swift in Sources */,
 				FFB4F2542639E18000EAA59A /* MenuController.swift in Sources */,
+				FF0CCCE026CD7B5900032DE1 /* Reminder.swift in Sources */,
 				FFB4F2172639D23300EAA59A /* AppDelegate.swift in Sources */,
 				FFCCF2F9263B13C40006369A /* Listener.swift in Sources */,
 				FF043CD0263F4355001C030D /* MainViewController.swift in Sources */,
@@ -293,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB4F2552639E18000EAA59A /* MenuController.swift in Sources */,
+				FF0CCCE126CD7B5900032DE1 /* Reminder.swift in Sources */,
 				FFCCF2FA263B13C40006369A /* Listener.swift in Sources */,
 				FFB4F22D2639D23600EAA59A /* AquaTests.swift in Sources */,
 				FF043CD1263F4355001C030D /* MainViewController.swift in Sources */,
@@ -304,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB4F2562639E18000EAA59A /* MenuController.swift in Sources */,
+				FF0CCCE226CD7B5900032DE1 /* Reminder.swift in Sources */,
 				FFCCF2FB263B13C50006369A /* Listener.swift in Sources */,
 				FFB4F2382639D23600EAA59A /* AquaUITests.swift in Sources */,
 				FF043CD2263F4355001C030D /* MainViewController.swift in Sources */,

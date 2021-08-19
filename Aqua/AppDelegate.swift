@@ -15,34 +15,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var menuBar: MenuController?
     var popover = NSPopover.init()
 
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-
+       
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let mainViewController = storyboard.instantiateController(withIdentifier:"MainViewController")
         
-        popover.contentViewController = MainViewController()
-        popover.contentSize = NSSize(width: 360, height: 360)
-        popover.contentViewController?.view = NSHostingView(rootView: contentView)
-        
-        // Create the window and set the content view.
-//        window = NSWindow(
-//            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-//            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-//            backing: .buffered, defer: false)
-//        window.isReleasedWhenClosed = false
-//        window.center()
-//        window.setFrameAutosaveName("Main Window")
-//        window.contentView = NSHostingView(rootView: contentView)
-//        window.makeKeyAndOrderFront(nil)
-        
-        //initialising our custom view.
+        popover.contentViewController =  mainViewController as! MainViewController
+        popover.contentSize = NSSize(width: 400, height: 300)
         menuBar = MenuController.init(popover)
         
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
 
 

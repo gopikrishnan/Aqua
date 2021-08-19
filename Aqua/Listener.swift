@@ -8,8 +8,8 @@
 import Foundation
 import Cocoa
 
-class Listner {
-    private var listner: Any?
+class Listener {
+    private var listener: Any?
     private let mask: NSEvent.EventTypeMask
     private let handler: (NSEvent?) -> Void
     
@@ -23,13 +23,13 @@ class Listner {
     }
 
     public func start() {
-        listner = NSEvent.addGlobalMonitorForEvents(matching: mask, handler: handler) as! NSObject
+        listener = NSEvent.addGlobalMonitorForEvents(matching: mask, handler: handler) as! NSObject
     }
 
     public func stop() {
-      if listner != nil {
-        NSEvent.removeMonitor(listner!)
-        listner = nil
+      if listener != nil {
+        NSEvent.removeMonitor(listener!)
+        listener = nil
       }
     }
 }

@@ -12,10 +12,16 @@ class MenuController {
     private var statusBar: NSStatusBar
     private var statusItem: NSStatusItem
     private var popover: NSPopover
-    private var eventListner: Listner?
+    private var eventListener: Listener?
+    
+    
+    var interval = 60;
+    
+
     
     init(_ popover: NSPopover) {
         self.popover = popover
+        
         statusBar = NSStatusBar.init()
         statusItem = statusBar.statusItem(withLength: 28.0)
        
@@ -26,8 +32,9 @@ class MenuController {
             statusBarButton.action = #selector(togglePopover(sender:))
             statusBarButton.target = self
         }
-        eventListner = Listner(mask: [.leftMouseDown, .rightMouseDown], handler: mouseEventHandler)
+        eventListener = Listener(mask: [.leftMouseDown, .rightMouseDown], handler: mouseEventHandler)
 
+        
     }
     
     @objc func togglePopover(sender: AnyObject) {
@@ -43,13 +50,13 @@ class MenuController {
             if let statusBarButton = statusItem.button {
                 popover.show(relativeTo: statusBarButton.bounds, of: statusBarButton, preferredEdge: NSRectEdge.maxY)
             }
-            eventListner?.start()
+            eventListener?.start()
 
         }
         
         func hidePopover(_ sender: AnyObject) {
             popover.performClose(sender)
-            eventListner?.stop()
+            eventListener?.stop()
 
         }
     
