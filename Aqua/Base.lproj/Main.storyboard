@@ -705,7 +705,7 @@
                             </textField>
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dbo-JB-7cU">
                                 <rect key="frame" x="108" y="127" width="138" height="28"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="5" doubleValue="2.5" tickMarkPosition="above" numberOfTickMarks="5" allowsTickMarkValuesOnly="YES" sliderType="linear" id="PHx-v1-lfO"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="4" doubleValue="3" tickMarkPosition="above" numberOfTickMarks="5" allowsTickMarkValuesOnly="YES" sliderType="linear" id="PHx-v1-lfO"/>
                                 <connections>
                                     <action selector="sliderUpdated:" target="0zO-fQ-bMT" id="SG1-eg-7OS"/>
                                 </connections>

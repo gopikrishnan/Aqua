@@ -15,7 +15,7 @@ class MainViewController: NSViewController {
 
     @IBOutlet weak var slider: NSSlider!
     @IBAction func sliderUpdated(_ sender: NSSlider) {
-        NSLog("slider value is changed %i",slider.intValue );
+        NSLog("slider value is changed %@",slider.stringValue );
         let sliderVal = slider.intValue;
         if (sliderVal != 0) {
             interval = interval + (Int(sliderVal)*2)
