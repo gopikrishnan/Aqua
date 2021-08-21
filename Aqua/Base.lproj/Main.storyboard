@@ -706,6 +706,9 @@
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dbo-JB-7cU">
                                 <rect key="frame" x="108" y="127" width="138" height="28"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="5" doubleValue="2.5" tickMarkPosition="above" numberOfTickMarks="5" allowsTickMarkValuesOnly="YES" sliderType="linear" id="PHx-v1-lfO"/>
+                                <connections>
+                                    <action selector="sliderUpdated:" target="0zO-fQ-bMT" id="SG1-eg-7OS"/>
+                                </connections>
                             </slider>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-YS-GNd">
                                 <rect key="frame" x="20" y="135" width="78" height="16"/>
